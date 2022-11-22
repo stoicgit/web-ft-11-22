@@ -1,33 +1,33 @@
-#I should be able to type a phone number
-#I should be able to view all the phone numbers I have created up to that point 
-#I should be able to add phone numbers
-#I should be able to see the names of the people attached to each phone number
-#I should be able to delete a specific phone number
-#I should be able to add phone numbers until I specify a stop and then the game will quit
-#The phone number needs to be in this format 
-#111-111-1111
+# K I S S
 
+# [k] I should be able to type a phone number 
+# [k] I should be able to view all the phone numbers I have created up to that point 
+# [k] I should be able to add phone numbers
+# [k] I should be able to see the names of the people attached to each phone number 
+#  i need to break this loop
+#  i need to delete a number
+#  i need to print the names in a nicer way
 
-#listOfPhoneNumber = []
-#phonenumber = input("what is your phone number?\n")
-#UserEntry = {"name": username, "number":phonenumber}
-#listOfPhoneNumber.append(phonenumber)
-#for number in listOfPhoneNumber:
-#    print(number)
-
-class phonebook:
+class PhoneBook:
     def __init__(self):
-        self.ListOfPhoneNumbers =[]
-    def addEntry(self,usersEntry):
-        self.ListOfPhoneNumbers.append(usersEntry)
-    def printListOfPhoneNumbers(self):
-        for number in self.ListOfPhoneNumbers:
-            print(number)
-
-myPhoneBook = phonebook()
-userchoice = ""
-while(true):
-    if(userchoice == "y"):
-        break
-    username = input("what is your name?\n")
+        self.phonenumbers = []
+    def printList(self):
+        counter = 1
+        for number in self.phonenumbers:
+            print(f"""
+            {counter}: {number["name"]} - {number["phoneNumber"]}
+            """)
+            counter+= 1
+    def addnumber(self,phonenumber):
+        self.phonenumbers.append(phonenumber)
+    def delNumber(self,number):
+        self.phonenumbers
+joesPhoneBook = PhoneBook()
+userChoice = ""
+while(True):
+    userNumber = input("what is your phonenumber?\n")
+    userName = input("what is your name?\n")
+    entry = {"phonenumber":userNumber, "name":userName}
+    joesPhoneBook.addnumber(entry)
+    joesPhoneBook.printList()
     
