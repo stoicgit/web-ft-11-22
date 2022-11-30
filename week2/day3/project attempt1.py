@@ -50,13 +50,26 @@ class Hero:
     name = ""
     def __init__(self, attack, health, defense):
         self.attack = 10
-        self.health = 10
+        self.health = 100
         self.defense = 8
-class RedGoblin:
+    def GoblinSlash(self):
+        health = health - (self.attack - self.defense)
+    def TakeDamaged(self):
+        self.health = self.defense - self.attack
+        
+class Goblin:
     def __init__(self, attack, health, defense):
-        self.attack = 5
-        self. health = 5
-        self.defense = 6
+        self.attack = attack
+        self. health = health
+        self.defense = defense
+    def RedGoblinPunch(self):
+        health = self.attack - self.defense
+    def TakeDamage(self):
+        self.health = self.defense - self.attack
+        
+        newGoblin = Goblin(10,100,8)
+        
+        
 class OrangeGoblin:
       def __init__(self, attack, health, defense):
         self.attack = 5
