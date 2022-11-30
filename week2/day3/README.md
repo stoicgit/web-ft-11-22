@@ -1,5 +1,5 @@
-# Language:
-python
+# Language
+* python
 # Project
 * Text based RPG
 * projectattempt2.py
