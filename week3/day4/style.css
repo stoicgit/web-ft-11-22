@@ -1,0 +1,19 @@
+.img {
+    height: 200px;
+    width: 300px;
+    border-radius: 90px;
+}
+input{
+    color: yellow;
+    background-color: black;
+}
+button {
+    color: yellow;
+    background-color: black;
+
+}
+marquee{
+    color:red;
+    font-size: xx-large;
+    position: absolute;bottom: 0%;
+}
