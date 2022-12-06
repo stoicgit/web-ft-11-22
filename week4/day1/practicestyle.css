@@ -1,0 +1,22 @@
+.contanier{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.header{
+    background-color: aqua;
+    align-items: center;
+}
+.content{
+    background-color: blue;
+}
+.footer{
+    background-color: brown;
+}
+.sidebar-left{
+    padding: 20px;
+}
+@media (width <= 300px) and (orientation: portrait){}
+

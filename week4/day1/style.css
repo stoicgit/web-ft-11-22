@@ -1,0 +1,15 @@
+body {
+    background-color: rgb(53, 54, 58)
+}
+
+h1 {
+    color: #fff;
+}
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+@media (width <= 300px) and (orientation: portrait){}
