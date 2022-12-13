@@ -1,0 +1,11 @@
+.mainContainer {
+    display: grid;
+    background-color: gray;
+}
+.legendpics {
+    height: 200px;
+    width: 200px;
+}
+.LegendsCard {
+    border: solid black 3px;
+}

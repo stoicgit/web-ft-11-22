@@ -1,0 +1,14 @@
+body {
+    background-color: whitesmoke;
+}
+header{
+    color: aliceblue;
+}
+.buildingPics{
+    height: 200px;
+    width: 200px;
+}
+
+.buildingCard{
+    border: solid black 3px;
+}
