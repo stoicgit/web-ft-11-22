@@ -15,4 +15,5 @@ const getWeather = async () => {
     console.log(json);
 };
 
-searchButton.addEventListener("click", getWeather);
+searchButton.addEventListener("click", getWeather)
+print("howdy")

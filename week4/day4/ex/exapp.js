@@ -1,3 +1,4 @@
+
 console.log(window);
 console.log(document);
 //GRAB WHAT YOU WANT
