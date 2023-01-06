@@ -5,7 +5,7 @@ const inputField = document
 .querySelector(".searchField")
 .value.replace(/\s/g, "+");
 console.log(inputField);
-const movieURL = `http://www.omdbapi.com/?i=tt3896198&apikey=dbe33980${inputField}`;
+const movieURL = `http://www.omdbapi.com/?i=tt3896198&apikey=47592868${inputField}`;
 
 const rawData = await fetch(movieURL);
 const json = await rawData.json();
@@ -17,7 +17,7 @@ const movieTitle = document.createElement("h2");
 const movieDescription = document.createElement("p");
 const movieYear = document.createElement("p");
 const imdbID = movie.imdbID;
-const individualMovieData = `http://www.omdbapi.com/?i=tt3896198&apikey=dbe33980${imdbID}`;
+const individualMovieData = `http://www.omdbapi.com/?i=tt3896198&apikey=47592868${imdbID}`;
 const fetchIndividualMovie = await fetch(individualMovieData);
 const individualJson = await fetchIndividualMovie.json();
 console.log(individualJson.Title);

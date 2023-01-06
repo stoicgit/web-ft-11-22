@@ -1,4 +1,6 @@
+
 .movieContainer{
+    color: rgba(204, 204, 206, 0.738);
     width: 100;
     height: 100vh;
     display: flex;
@@ -12,6 +14,7 @@
     background-color: #000000;
     
 }
+
 
 form{
     background: #fff;
