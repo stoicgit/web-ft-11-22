@@ -3,6 +3,9 @@ const workoutContainer = document.querySelector('.workout-container')
 const inputValue = document.querySelector('.inputFeild')
 const searchBtn = document.querySelector('.search-btn')
 
+
+
+
     const getMuscleStuff = async () =>{
         workoutContainer.innerHTML = null
         console.log(inputValue.value)
@@ -16,6 +19,7 @@ const searchBtn = document.querySelector('.search-btn')
         })
         const data = await res.json()
         console.log(data)
+
 
         let exerciseList = document.createElement('ul')
         data.forEach(exercise => {
@@ -31,5 +35,6 @@ const searchBtn = document.querySelector('.search-btn')
         console.log(exerciseList)
         workoutContainer.append(exerciseList)
     }
+
 
 searchBtn.addEventListener("click", getMuscleStuff)
