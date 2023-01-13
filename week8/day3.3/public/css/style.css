@@ -1,0 +1,40 @@
+.container {
+  background-color: gray;
+  display: flex;
+  flex-direction: row;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+}
+h1 {
+  color: rgb(239, 239, 239);
+  flex-direction: row;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.navbar {
+  background-color: azure;
+  height: 100%;
+  width: 150px;
+}
+
+.navbarName {
+  border: 2px solid azure;
+}
+
+ul.navbarlist {
+  padding: 0px;
+}
+
+.nav-item {
+  list-style: none;
+}
+
+.nav-link {
+  text-decoration: none;
+}

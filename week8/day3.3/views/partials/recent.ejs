@@ -1,0 +1,23 @@
+<div class="recent">
+  <div>
+    <h1>activity</h1>
+  </div>
+  <div class="profile">
+    <h1>name</h1>
+    <h1>name</h1>
+    <h1>name</h1>
+    <h1>name</h1>
+    <h1>name</h1>
+  </div>
+  <div id="recentActivity">
+    <% data.forEach( (item )=> { %>
+    <div class="person">
+      <p><%=item.name%></p>
+      <p><%=item.balance%></p>
+      <p><%=item.company%></p>
+      <p><%=item.email%></p>
+    </div>
+
+    <% }); %>
+  </div>
+</div>

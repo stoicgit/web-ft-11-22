@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<%- include('../partials/head'); %>
+</head>
+<body class="container">
+
+<header>
+<%- include('../partials/header'); %>
+</header>
+
+<main>
+    <div class="aboutme">
+        <h1>
+            <%= me.name %> 
+        </h1>
+
+        <div class="image">
+        <h1>
+            <img src= <%=me.picture %>
+        </h1>
+        </div>
+        <div class="paragrapgh">
+            <p>Once upon a time, in a dense forest, there was a curious and determined bear. This bear had heard about the many wonders that could be created with code, and was eager to learn how to do it himself. He spent his days scouring the forest for any information he could find on the subject, reading books and tutorials, and practicing writing code on his computer. It was a challenging task, as bears are not known for their dexterity with keyboards, but he was determined to succeed. Despite the many obstacles he faced, the bear never gave up, and eventually, he succeeded in learning how to code. He was able to build many incredible things with his newfound skills, and the other animals in the forest were amazed by what he could do. The bear's persistence and hard work had paid off, and he lived happily ever after as a skilled coder.</p>
+        </div>
+        <h1>
+            <%= me.city%> 
+        </h1>
+        </div>
+        <h1>
+            <%= me.occupation %> 
+        </h1>
+        <h1>
+            <%= me.favoriteColor %> 
+        </h1>
+        
+    </div>
+</main>
+
+<footer>
+    <%- include('../partials/footer'); %>
+</footer>
+
+</body>
+</html>
