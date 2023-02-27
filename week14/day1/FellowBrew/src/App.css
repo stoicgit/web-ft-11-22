@@ -1,0 +1,262 @@
+/*HomePage*/
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 50px auto;
+}
+.homeTop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(0, 0, 0));
+  margin: 20px auto;
+  border-radius: 20px;
+
+  position: sticky;
+  z-index: 999;
+  top: 0;
+}
+.cartNav {
+  display: flex;
+  align-items: center;
+}
+
+.cartImg {
+  display: flex;
+  align-items: center;
+  height: 20px;
+}
+
+.cartTotal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 10px;
+  right: 10px;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  width: 10px;
+  height: 10px;
+  padding: 5px;
+}
+
+.logo h1 {
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  color: white;
+}
+
+.links {
+  display: flex;
+  gap: 20px;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  position: relative;
+  padding: 2px;
+}
+.link::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background-color: white;
+  transition: width 0.25s ease-out;
+}
+.link:hover::before {
+  width: 100%;
+  right: auto;
+  left: 0;
+}
+
+/* foot */
+
+.footer {
+  width: fit-content;
+  margin: 50px auto;
+  border-top: 2px solid rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: rgb(170, 170, 170);
+}
+.footerBottom {
+  display: flex;
+  gap: 50px;
+}
+.footerBottom p {
+  margin: 0px;
+}
+
+.footer h1 {
+  text-align: center;
+  font-size: 1.25rem;
+}
+.footerNav {
+  display: flex;
+  gap: 20px;
+}
+.footlink {
+  text-decoration: none;
+  color: rgb(170, 170, 170);
+}
+/* 404 */
+.errorDiv {
+  display: flex;
+  justify-content: center;
+  margin: 50px auto;
+}
+.error {
+  width: 600px;
+}
+
+/* Shop */
+
+.sectionDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.sectionProducts {
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+@media screen and (max-width: 480px) {
+  .sectionProducts {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: auto;
+  }
+}
+
+/* Shopping */
+
+.cartDiv {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  gap: 20px;
+  margin: auto;
+  text-align: center;
+}
+
+.cartItems {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+.cartItem {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 20px 0px;
+  border-bottom: 2px solid rgb(170, 170, 170);
+  justify-content: space-between;
+}
+.cartItemImg {
+  height: 100px;
+}
+.cartItemDiv {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.cartProduct {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0px;
+}
+.cartProductPrice {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.cartButton {
+  padding: 5px 10px;
+  border-radius: 3px;
+  border-style: none;
+}
+.pay {
+  background-color: rgb(244, 244, 244);
+  padding: 0px 20px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.8rem;
+}
+.pay h1 {
+  font-weight: 500;
+}
+
+@media screen and (max-width: 610px) {
+  .cartDiv {
+    margin: auto;
+    width: fit-content;
+  }
+  .cartItemDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0px;
+  }
+  .cartItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+  .cartItemImg {
+    height: 400px;
+    width: 400px;
+  }
+  .cartButton {
+    font-size: 1.5rem;
+  }
+}
+
+/* AboutUs */
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px auto;
+  gap: 20px;
+  width: 800px;
+}
+.about h1,
+.about p,
+.about h2 {
+  margin: 0px;
+}
+
+.photoDiv {
+  width: fit-content;
+  display: flex;
+  gap: 40px;
+}
+.photoDiv img {
+  width: 380px;
+}
